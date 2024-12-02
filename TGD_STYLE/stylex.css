@@ -1,0 +1,409 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, rgb(0, 0, 0) 20%, rgb(100, 100, 150));
+  background-size: 200% 200%;
+  animation: fluidGradient 10s ease infinite;
+  min-height: 100%;
+}
+
+
+/*LOGIN*/
+.container {
+  padding-top: 140px;
+  z-index: 1;
+  animation: fadeInTardigradus 2s ease-in forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.Titulo h2 {
+  font-family: fantasy;
+  color: rgb(0, 0, 0);
+  font-size: 500%;
+  margin-bottom: 20px;
+  animation: fadeInTardigradus 2s ease-in forwards;
+}
+
+
+.TextoLogin h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+  animation: fadeInForm 4s ease-in forwards;
+  font-size: 200%;
+  letter-spacing: 1px;
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.login-form input {
+  font-size: 16px;
+  padding: 13px;
+  margin: 10px;
+  width: 250px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+
+.login-form button {
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: rgb(100, 100, 150);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10%;
+}
+
+.login-form button:hover {
+  background-color: #00000085;
+}
+
+img.logo {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  z-index: 1000;
+}
+
+.linkcadastro a {
+  font-family: arial;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+
+
+@keyframes fluidGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 95%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes fadeInTardigradus {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInForm {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/*CADASTRO*/
+.container2 {
+  font-family: "Poppins";
+  background-color: rgb(104, 104, 156);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: fadeInTardigradus 2s ease-in forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.voltarbotao a {
+  color: rgb(255, 255, 255);
+  padding-left: 25px;
+  font-size: 40px;
+  animation: fadeInTardigradus 2s ease-in forwards;
+}
+
+.voltarbotao a:hover {
+  color: rgb(154, 154, 154);
+}
+
+
+.header {
+  background-color: rgb(64, 64, 100);
+  padding: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  padding: 50px;
+  margin-left: -20px;
+
+
+}
+
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.form-control input {
+  border: 2px solid rgb(255, 255, 255);
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control i {
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: rgb(55, 55, 85);
+  border: 2px solid rgb(60, 60, 95);
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.form button:hover {
+  background-color: rgba(0, 0, 0, 0.582);
+}
+
+/*Icon error e success*/
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+/*PAGINA INICIAL*/
+.usericon i {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 24px;
+}
+
+.usericon i:hover {
+  color: rgb(176, 176, 176);
+}
+
+.usericon .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+
+.usericon .dropdown-content a {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.usericon .dropdown-content a:hover {
+  background-color: rgb(38, 38, 58);
+}
+
+
+
+.logohome a {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  text-decoration: none;
+  z-index: 1000;
+  padding: 10px 10px;
+}
+
+.sobre a {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  font-size: 15px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  text-decoration: none;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.sobre a:hover {
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.contatos a {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins";
+  font-size: 15px;
+  letter-spacing: 0px;
+  position: absolute;
+  top: 0px;
+  right: 160px;
+  text-decoration: none;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.contatos a:hover {
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.texto {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: "Poppins";
+  
+}
+
+.texto h1 {
+  font-size: 100px;
+  margin-top: 100px;
+  animation: fadeInTardigradus 4s ease-in forwards;
+}
+
+.texto p{
+  font-size: 25px;
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 40px;
+  animation: fadeInTardigradus 6s ease-in forwards;
+
+}
+
+/*PAGINA DE CONTATO*/
+
+.blococontatos{
+  font-family: "Poppins";
+  background-color: rgb(104, 104, 156);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(0, 0, 0);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  animation: fadeInTardigradus 2s ease-in forwards;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.formcontatos{
+  padding: 50px;
+  margin-left: -20px;
+}
+.formcontatos a{
+   color: rgb(255, 255, 255);
+   height: 50px;
+  }
+.instagramcontatos{
+  left: 0;
+}
+.instagramcontatos a{
+  text-decoration: none;
+}
+.githubcontatos{
+  margin-top: 30px;
+  left: 0;
+  
+}
+.githubcontatos a{
+  text-decoration: none;
+}
+.linkedincontatos{
+  margin-top: 30px;
+  left: 0;
+}
+.linkedincontatos a{
+  text-decoration: none;
+}
+.telefonecontatos{
+  margin-top: 30px;
+  left: 0;
+}
