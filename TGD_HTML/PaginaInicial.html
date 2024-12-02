@@ -22,14 +22,15 @@
     </div>
 
     <div class="usericon">
-            <i class="fa-solid fa-circle-user" onclick="toggleDropdown()"></i>
-            <div class="dropdown-content">
-                <a href="#">Perfil</a>
-                <i class="fa-solid fa-user" style="color: #ffffff; font-size: 13px; top: 11px; right: 88px;"></i>
-                <a href="../TGD_HTML/Login.html">Sair</a>
-                <i class="fa-solid fa-arrow-right-from-bracket" style="color: #ffffff; font-size: 15px; top: 45px; right: 90px;"></i>
-            </div>
-       </div>
+        <i class="fa-solid fa-circle-user" onclick="toggleDropdown()"></i>
+        <div class="dropdown-content">
+            <a href="#">Perfil</a>
+            <i class="fa-solid fa-user" style="color: #ffffff; font-size: 13px; top: 11px; right: 88px;"></i>
+            <a href="../TGD_HTML/Login.html">Sair</a>
+            <i class="fa-solid fa-arrow-right-from-bracket"
+                style="color: #ffffff; font-size: 15px; top: 45px; right: 90px;"></i>
+        </div>
+    </div>
     <div class="sobre">
         <a href="../TGD_HTML/sobre.html">sobre</a>
     </div>
@@ -37,16 +38,58 @@
         <a href="../TGD_HTML/contatos.html">contatos</a>
     </div>
 
-    <div class="texto">
-        <h1>Objetivo</h1>
-        <p>O objetivo de ter feito este site é um reflexo do meu desejo de testar e aprimorar as habilidades que adquiri tanto na faculdade quanto de forma autônoma. Como estudante, sinto a necessidade de colocar em prática os conceitos teóricos que aprendi, além de explorar novas técnicas que venho aprendendo por conta própria. Durante as férias, tive a oportunidade de dedicar um tempo maior a esse projeto e vi nisso uma excelente chance de me desafiar e crescer profissionalmente.</p>
-        <p>Fazer o site sozinho me permitiu ter controle total sobre todas as etapas do processo, desde o planejamento até a execução. Isso me proporcionou uma compreensão mais profunda dos detalhes e das escolhas que envolvem o desenvolvimento de uma página online, além de me ensinar a lidar com os desafios e imprevistos que surgem ao longo do caminho. Ao desenvolver o site de forma independente, pude explorar novas ferramentas, testar diferentes abordagens e até mesmo resolver problemas que, no começo, pareciam complexos.</p>
-        <p>Acredito que esse projeto não só é uma forma de colocar em prática o que aprendi, mas também uma oportunidade de demonstrar minha capacidade de aprender de maneira autônoma e aplicar esse conhecimento em um produto final. Com isso, o site torna-se não apenas uma realização técnica, mas também uma vitrine do meu crescimento e da minha evolução como estudante e futuro profissional.</p>
+    <div class="div-blocos">
+        
+        <div class="blocospotify">
+            
+            <div class="bloco-imagem">
+                <a href="https://open.spotify.com/intl-pt">
+                <img src="../TGD_IMAGENS/spotify.png" alt="Spotify">
+                </a>
+            </div>
+        
+            <div class="bloco-titulo">
+                <h2>Spotify</h2>
+            </div>
+        </div>
+
+        <div class="blocoinstagram">
+            <div class="bloco-imagem">
+                <a href="https://www.instagram.com/">
+                <img src="../TGD_IMAGENS/instagram.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="bloco-titulo">
+                <h2>Instagram</h2>
+            </div>
+        </div>
+
+        <div class="blocotiktok">
+            <div class="bloco-imagem">
+                <a href="https://www.tiktok.com/pt-BR/">
+                <img src="../TGD_IMAGENS/tiktok.png" alt="Instagram">
+            </a>
+            </div>
+            <div class="bloco-titulo">
+                <h2>TikTok</h2>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <button class="search-btn" onclick="toggleSearch()">
+        <i class="fa-solid fa-arrow-up arrow"></i> <!-- Seta para cima -->
+    </button>
+
+    <!-- Navbar de pesquisa -->
+    <div id="search-bar" class="search-bar">
+        <input type="text" placeholder="Pesquisar..." class="search-input">
+        <button class="search-submit">Buscar</button>
     </div>
 
 
-
     <script src="../TGD_SCRIPTS/dropdownusericon.js"></script>
+    <script src="../TGD_SCRIPTS/navbarvert.js"></script>
 </body>
-
 </html>
